@@ -4,7 +4,6 @@
 #from the file add_0.py 
 #and prints the result of the addition 1 + 2 = 3
 
-import add_0
 add_0 = __import__('add_0')
 
 a = 1
