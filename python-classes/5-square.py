@@ -32,14 +32,46 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = size
             
-            """
-        Get the value of the `size` property.
+        #Get the value of the `size` property.
 
-        :return: The value of the `size` property.
-        """
+        #:return: The value of the `size` property.
+
     @property
     def size(self):
         return self.__size
+            
+        #Set the size of the object.
+
+        #Parameters:
+        #    value (int): The new size of the object.
+
+        #Raises:
+        #    TypeError: If the value is not an integer.
+        #    ValueError: If the value is less than 0.
+        
+        #Calculates the area of a square.
+        
+        """
+
+        Returns:
+            int: The area of the square.
+        """
+                
+            #Calculates the area of an object.
+
+
+                """
+        
+        Returns:
+            int: The area of the object.
+        """
+
+        #Calculate and return the area of a square.
+
+        """
+        Returns:
+            int: The area of the square.
+        """
     @size.setter
     def size(self, value):
         if type(value) is not int:
