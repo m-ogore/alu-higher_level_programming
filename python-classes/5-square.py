@@ -15,16 +15,14 @@ You are not allowed to import any module
 '''
 
 class Square:
-            """
-        Initializes a new instance of the class.
+            
+    #Initializes a new instance of the class.
 
-        Parameters:
-            size (int, optional): The size of the object. Defaults to 0.
+    #Parameters: size (int, optional): The size of the object. Defaults to 0.
 
-        Raises:
-            TypeError: If size is not an integer.
-            ValueError: If size is less than 0.
-        """
+    #Raises:TypeError: If size is not an integer.
+    #and ValueError: If size is less than 0.
+    
     def __init__(self, size=0):
         if type(size) is not int:
             raise TypeError("size must be an integer")
@@ -60,7 +58,7 @@ class Square:
             #Calculates the area of an object.
 
 
-                """
+        """
         
         Returns:
             int: The area of the object.
@@ -83,3 +81,27 @@ class Square:
         return self.__size * self.__size
     def my_print(self):
         if self.__size == 0:
+            print()
+        else:
+            for i in range(self.__size):
+                for j in range(self.__size):
+                    print("#", end="")
+                print()
+
+
+
+
+my_square = Square(3)
+my_square.my_print()
+
+print("--")
+
+my_square.size = 10
+my_square.my_print()
+
+print("--")
+
+my_square.size = 0
+my_square.my_print()
+
+print("--")
